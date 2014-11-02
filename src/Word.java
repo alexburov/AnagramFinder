@@ -1,3 +1,6 @@
+import java.lang.Override;
+import java.lang.String;
+
 // Defines a word with its string and encoded values.
 class Word
 {
@@ -42,5 +45,11 @@ class Word
             product *= letterToValue(sourceWord.charAt(i));
         }
         return product;
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.value;
     }
 }
